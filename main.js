@@ -11,7 +11,6 @@ const $url = document.URL;
 const popup = document.getElementById("myPopup");
 
 const copyToClipBoard = () => {
-  console.log("ok");
   navigator.clipboard.writeText($url);
   popup.classList.toggle("show");
 };
