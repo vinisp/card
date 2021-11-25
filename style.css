@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=PT+Sans&family=Roboto:wght@100;300;700&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@100;300&family=PT+Sans&family=Roboto:wght@100;300;700&display=swap");
 * {
   font-family: "Roboto", sans-serif;
 }
@@ -84,7 +83,7 @@
 .inner {
   width: 100%;
   height: 100%;
-  background-color: transparent;
+  background-color: #f2f2f2;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -108,9 +107,8 @@
 .photo {
   width: 120px;
   height: 120px;
-
   border-radius: 14px;
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 4px 16px;
+  border: solid 3px #344a7c;
 }
 
 img {
@@ -151,7 +149,8 @@ img {
   padding: 15px;
   gap: 15px;
   border-radius: 10px;
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 4px 12px;
+  background: white;
+  cursor: pointer;
 }
 
 .midIcon {
@@ -173,6 +172,11 @@ img {
   display: flex;
   flex-direction: column;
   width: 180px;
+}
+
+.midInfoTitle {
+  color: #4865ab;
+  font-weight: bold;
 }
 
 .buttons {
@@ -242,14 +246,33 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 20px;
 
   color: white;
   background: #4865ab;
   border-radius: 0 0 14px 14px;
 }
 
-.backButtons div {
+.bioInfo {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bio h3 {
+  margin: 0 10px;
+  padding: 0;
+}
+
+.bioInfo p {
+  margin: 0;
+  padding: 0 35px;
+  text-align: justify;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+}
+
+.copyBtn {
   width: 50%;
   height: 30px;
   display: flex;
@@ -262,7 +285,7 @@ img {
   transition: all 500ms ease-in-out;
 }
 
-.backButtons div:hover {
+.copyBtn:hover {
   background: rgba(0, 0, 0, 0.4);
 }
 
@@ -367,4 +390,7 @@ img {
   100% {
     opacity: 0;
   }
+}
+
+@media screen {
 }
